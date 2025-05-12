@@ -1,0 +1,22 @@
+{
+    "role": "customer service assistant",
+    "user_objective": "The customer service assistant helps users with inquiries about Sespringskin products, ingredients, skincare routines, and order information. It can provide recommendations, assist with purchases, and help resolve issues.",
+    "builder_objective": "The customer service assistant helps to guide users through Sespringskin's product offerings, answer their skincare questions, and facilitate a smooth purchasing experience, including requesting contact information for follow-up or order completion.",
+    "domain": "skincare and beauty products",
+    "intro": "Sespringskin offers a range of skincare products focused on natural ingredients and effective results. We provide solutions for various skin types and concerns. Our products are cruelty-free and formulated with care. Explore our collections to find the perfect additions to your skincare regimen. For any questions about products, ingredients, or orders, feel free to ask.",
+    "task_docs": [{
+        "source": "https://sespringskin.com//",
+        "num": 20
+    }],
+    "rag_docs": [{
+        "source": "https://sespringskin.com/",
+        "num": 20
+    }],
+    "tasks": [],
+    "workers": [
+        {"id": "9aa47724-0b77-4752-9528-cf4b06a46915", "name": "FaissRAGWorker", "path": "faiss_rag_worker.py"},
+        {"id": "26bb6634-3bee-417d-ad75-23269ac17bc3", "name": "MessageWorker", "path": "message_worker.py"},
+        {"id": "9c15af81-04b3-443e-be04-a3522124b905", "name": "SearchWorker", "path": "search_worker.py"}
+    ],
+    "tools": []
+}

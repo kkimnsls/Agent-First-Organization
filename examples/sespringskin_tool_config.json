@@ -1,0 +1,23 @@
+{
+    "role": "customer service assistant",
+    "user_objective": "The customer service assistant helps users with inquiries about Sespringskin products, ingredients, skincare routines, and order information. It can provide recommendations, assist with purchases, and help resolve issues.",
+    "builder_objective": "The customer service assistant helps to guide users through Sespringskin's product offerings, answer their skincare questions, and facilitate a smooth purchasing experience, including requesting contact information for follow-up or order completion.",
+    "domain": "skincare and beauty products",
+    "intro": "Sespringskin offers a range of skincare products focused on natural ingredients and effective results. We provide solutions for various skin types and concerns. Our products are cruelty-free and formulated with care. Explore our collections to find the perfect additions to your skincare regimen. For any questions about products, ingredients, or orders, feel free to ask.",
+    "task_docs": [
+        {
+            "source": "https://sespringskin.com/",
+            "num": 20
+        }
+    ],
+    "tasks": [],
+    "workers": [],
+    "tools": [
+        {"id": "f1d2c3b4-a5e6-f789-0123-456789abcdef", "name": "search_products", "path": "ecommerce_tools/search_products.py"},
+        {"id": "b2c3d4e5-f6a7-8901-2345-6789abcdef01", "name": "get_product_details", "path": "ecommerce_tools/get_product_details.py"},
+        {"id": "c3d4e5f6-a7b8-9012-3456-789abcdef012", "name": "add_to_cart", "path": "ecommerce_tools/add_to_cart.py"},
+        {"id": "d4e5f6a7-b8c9-0123-4567-89abcdef0123", "name": "view_cart", "path": "ecommerce_tools/view_cart.py"},
+        {"id": "e5f6a7b8-c9d0-1234-5678-9abcdef01234", "name": "checkout", "path": "ecommerce_tools/checkout.py"},
+        {"id": "f6a7b8c9-d0e1-2345-6789-abcdef012345", "name": "track_order", "path": "ecommerce_tools/track_order.py"}
+    ]
+}

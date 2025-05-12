@@ -49,7 +49,7 @@ def init_worker(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', type=str, default="./arklex/orchestrator/examples/customer_service_config.json")
+    parser.add_argument('--config', type=str, default="./arklex/orchestrator/examples/ecommerce_service_config.json")
     parser.add_argument('--output-dir', type=str, default="./examples/test")
     parser.add_argument('--model', type=str, default=MODEL["model_type_or_path"])
     parser.add_argument( '--llm-provider',type=str,default=MODEL["llm_provider"],choices=LLM_PROVIDERS)
